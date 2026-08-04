@@ -1,31 +1,44 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
     // Variables
   
-    [SerializeField] private int _edad = 17;
-    private float _velocidad = 15.5f;
+    public int edad = 17;
     public string nombre = "Peludito";
-    public bool isjumping = false;
+    public bool puedeVotar = true;
+    public float altura = 1.65f;
+    
 
-    public float fuerza = 500f;
+    public GameObject gameObject;
+    public Rigidbody2D rigidbody2D;
+    public Collider2D collider2D;
+    public SpriteRenderer spriteRenderer;
+    public Transform transform;
 
-    [SerializeField] private Rigidbody2D _rigidbody2D;
 
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        _rigidbody2D.AddForce(Vector2.right * fuerza);
-       
+        Debug.Log(" Hola: " + nombre + " tu edad es: " + edad + " tu altura es: " + altura);
+
+        rigidbody2D.simulated = false; 
+
+        spriteRenderer.color = Color.red;
+
+        transform.position = new Vector3(10f, 0f, 0f);
+
+
+
+
+    }
+
+    private void Update()
+    {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
 
-    }
 }
