@@ -1,34 +1,25 @@
 using JetBrains.Annotations;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class playermovement : MonoBehaviour
 {
     // Variables
-  
-    public int edad = 17;
-    public string nombre = "Peludito";
-    public bool puedeVotar = true;
-    public float altura = 1.65f;
-    
 
-    public GameObject gameObject;
-    public Rigidbody2D rigidbody2D;
-    public Collider2D collider2D;
-    public SpriteRenderer spriteRenderer;
-    public Transform transform;
 
+    [SerializeField] private float _force = 1.85f;
+
+    [SerializeField] private float _speed = 1.85f;
+
+   [SerializeField] private Rigidbody2D _rigidbody2D;
+   
 
 
 
     private void Start()
     {
-        Debug.Log(" Hola: " + nombre + " tu edad es: " + edad + " tu altura es: " + altura);
-
-        rigidbody2D.simulated = false; 
-
-        spriteRenderer.color = Color.red;
-
-        transform.position = new Vector3(10f, 0f, 0f);
+        _rigidbody2D = GetComponent<Rigidbody2D>();
 
 
 
@@ -37,8 +28,17 @@ public class playermovement : MonoBehaviour
 
     private void Update()
     {
-        
-    }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            _rigidbody2D.AddForce(Vector2.up * _force);
+            
+        }
 
+        _rigidbody2D.velocity = Vector2.right * _speed * Time.deltaTime;
+
+
+
+    }
+       
 
 }

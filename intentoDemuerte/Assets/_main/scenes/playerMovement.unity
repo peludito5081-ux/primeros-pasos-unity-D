@@ -761,7 +761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143029977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.61, y: 0.19, z: 0}
   m_LocalScale: {x: 0.8482, y: 0.7439, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -783,7 +783,7 @@ Rigidbody2D:
   m_Mass: 1.1075583
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 30
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -794,7 +794,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1143029982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,15 +807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e826e1f1fe9d646469f8d0eadc9e4df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edad: 17
-  nombre: Peludito
-  puedeVotar: 1
-  altura: 1.65
-  gameObject: {fileID: 1143029977}
-  rigidbody2D: {fileID: 1143029981}
-  collider2D: {fileID: 1143029978}
-  spriteRenderer: {fileID: 1143029979}
-  transform: {fileID: 1143029980}
+  _force: 50
+  _speed: 1500
+  _rigidbody2D: {fileID: 1143029981}
 --- !u!1 &1186621703
 GameObject:
   m_ObjectHideFlags: 0
