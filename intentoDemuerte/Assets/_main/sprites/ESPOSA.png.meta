@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ESPOSA_0: 3469025634017249341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
