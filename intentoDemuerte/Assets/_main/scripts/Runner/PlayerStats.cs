@@ -8,6 +8,9 @@ public class PlayerStats : MonoBehaviour
     public void RestarVida(int daño)
     {
         _puntosVida = _puntosVida - daño;
-        _puntosVida -= daño;
+    }
+    public void SumarVida(int daño)
+    {
+        _puntosVida = _puntosVida + daño;
     }
 }
