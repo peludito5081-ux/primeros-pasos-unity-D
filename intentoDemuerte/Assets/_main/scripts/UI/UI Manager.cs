@@ -4,14 +4,18 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     
-    [SerializeField] private Image Barra;
-    void Start()
+    [SerializeField] private Image _barra;
+    public void SumarFillAmount(float amount)
     {
-        Barra.color = Color.red;
-        Barra.fillAmount = 0.5f;
+        _barra.fillAmount += amount;
     }
 
-    void Update()
+    public void RestarFillAmount(float amount)
+    {
+        _barra.fillAmount=_barra.fillAmount - amount;
+    }
+
+    public void ColorBarra(Color color)
     {
         
     }

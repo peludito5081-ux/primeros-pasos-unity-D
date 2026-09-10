@@ -1573,7 +1573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364277616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.29, y: -1.71, z: 0}
+  m_LocalPosition: {x: -7.87, y: -1.61, z: 0}
   m_LocalScale: {x: 0.6989202, y: 1.2374, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1673,6 +1673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c52b5b637757034b897a260d99309b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerStats: {fileID: 364277624}
+  _uiManager: {fileID: 1748873687}
   _puntosVida: 100
 --- !u!114 &364277625
 MonoBehaviour:
@@ -1687,6 +1689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 364277624}
+  _uiManager: {fileID: 1748873687}
 --- !u!1 &371558323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,7 +2777,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2965,7 +2968,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4287,7 +4290,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6462,7 +6465,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7572,6 +7575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 364277624}
+  _uiManager: {fileID: 1748873687}
 --- !u!1 &1251691525
 GameObject:
   m_ObjectHideFlags: 0
@@ -8462,7 +8466,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9573,7 +9577,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9813,7 +9817,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -10284,7 +10288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0dfaaf26ba631a4ebee6c50ea0281c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Barra: {fileID: 634814005}
+  _barra: {fileID: 634814005}
 --- !u!1 &1768629231
 GameObject:
   m_ObjectHideFlags: 0
@@ -10916,7 +10920,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11023,7 +11027,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11878,7 +11882,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12120,7 +12124,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12210,7 +12214,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf5bc2255e480eb45bb6f1c5092f2f09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
