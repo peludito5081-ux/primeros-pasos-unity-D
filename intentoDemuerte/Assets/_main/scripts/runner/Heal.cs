@@ -7,7 +7,7 @@ public class Heal : MonoBehaviour
     [SerializeField] private UIManager _uiManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("player"))
+        if (collision.CompareTag("Player"))
         {
             _playerStats.SumarVida(10);
             Destroy(this.gameObject);

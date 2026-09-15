@@ -23,22 +23,7 @@ public class UIManager : MonoBehaviour
     }
     public void ColorBarra(Color color)
     {
-        if (_puntosVida >= 0.8)
-        {
-            _uiManager.ColorBarra(Color.green);
-        }
+        _barra.color = color;
 
-        if ((_puntosVida <= 0.4) && (_puntosVida >= 0.8))
-        {
-            _uiManager.ColorBarra(Color.yellow);
-        }
-;
-        if (_puntosVida >= 0.4)
-        {
-            _uiManager.ColorBarra(Color.red);
-        }
-;
     }
-
-
-}
+} 
