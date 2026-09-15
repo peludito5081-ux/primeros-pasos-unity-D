@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public void SumarFillAmount(float amount)
     {
         _barra.fillAmount += amount;
+        _barra.fillAmount = _barra.fillAmount + amount;
     }
 
     public void RestarFillAmount(float amount)
@@ -17,6 +18,6 @@ public class UIManager : MonoBehaviour
 
     public void ColorBarra(Color color)
     {
-        
+        _barra.color = color;
     }
 }

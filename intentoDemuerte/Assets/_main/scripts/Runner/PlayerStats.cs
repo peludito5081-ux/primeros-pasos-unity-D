@@ -1,32 +1,42 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private PlayerStats _playerStats;
     [SerializeField] private UIManager _uiManager;
-    [SerializeField] private float _puntosVida = 100.0f;
+    [SerializeField] private float _puntosVidaActuales = 100f;
+    [SerializeField] private int _vidaMaxima;
     // Start is called before the first frame update
     public void RestarVida(int daño)
     {
-        _puntosVida = _puntosVida - daño;
+        _puntosVidaActuales = _puntosVidaActuales - daño;
     }
-    public void SumarVida(int daño)
+    public void SumarVida(int vida)
     {
-        _puntosVida = _puntosVida + daño;
+        _puntosVidaActuales += vida;
     }
     private void Update()
     {
-        if (_puntosVida >= 80)
+        if (_puntosVidaActuales >= 100)
+        {
+            _puntosVidaActuales = 100;
+        }
+        if (_puntosVidaActuales >= 80)
         {
            _uiManager.ColorBarra(Color.green);
         }
-        if ((40 <= _puntosVida) && (40 < 80))
+        if (40 <= _puntosVidaActuales && _puntosVidaActuales < 80)
         {
             _uiManager.ColorBarra(Color.yellow);
         }
-        if (_puntosVida < 40)
+        if (_puntosVidaActuales < 40)
         {
             _uiManager.ColorBarra(Color.red);
+        }
+        if (_puntosVidaActuales == 0)
+        {
+            Destroy (this.gameObject);
         }
     }
 }
