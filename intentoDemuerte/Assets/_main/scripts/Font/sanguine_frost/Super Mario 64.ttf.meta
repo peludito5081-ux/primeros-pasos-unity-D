@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a11138bd3f89a03469de7a30e9e9c1a2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Super Mario 64
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e21cd6c250f432c42835935923b9a814, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
