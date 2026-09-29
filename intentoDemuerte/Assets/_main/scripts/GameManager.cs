@@ -8,4 +8,19 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
+
+    public void SalirDelJuego()
+    {
+        Application.Quit();
+
+    }
+    public void PausarElJuego()
+    {
+        Time.timeScale = 0;
+
+    }
+    public void ReanudarJuego()
+    {
+        Time.timeScale = 1;
+    }
 }
