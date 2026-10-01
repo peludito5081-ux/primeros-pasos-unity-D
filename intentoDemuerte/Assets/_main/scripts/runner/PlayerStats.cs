@@ -8,7 +8,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int _puntosVida = 100;
     [SerializeField] private UIManager _uiManager;
     [SerializeField] private PlayerStats playerStats;
-    
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameObject panelDerrota;
     public void SumarVida(int vida)
     {
         _puntosVida = _puntosVida + vida;
@@ -21,16 +22,20 @@ public class PlayerStats : MonoBehaviour
 
     }
 
-  
+    private void Start()
+    {
+        panelDerrota.SetActive(false);
+
+    }
 
     public void Update()
     {
-        if (_puntosVida >= 80) 
+        if (_puntosVida >= 80)
         {
             _uiManager.ColorBarra(Color.green);
         }
 
-        if ( 40 <= _puntosVida && _puntosVida <80)
+        if (40 <= _puntosVida && _puntosVida < 80)
         {
             _uiManager.ColorBarra(Color.yellow);
         }
@@ -39,7 +44,7 @@ public class PlayerStats : MonoBehaviour
         {
             _uiManager.ColorBarra(Color.red);
         }
-       
+
         if (_puntosVida > 100)
         {
             _puntosVida = 100;
@@ -47,8 +52,11 @@ public class PlayerStats : MonoBehaviour
 
         if (_puntosVida <= 0)
         {
-            Destroy(this.gameObject);
+            Time.timeScale = 0;
+            
         }
+
+        
 
     }
 

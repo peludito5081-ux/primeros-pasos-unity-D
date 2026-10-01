@@ -8,8 +8,8 @@ public class ObstaculoMortal : MonoBehaviour
     {
         if (collision.gameObject.tag == "player");
         {
-            _playerStats.RestarVida(10);
-            _uiManager.RestarFillAmount(0.1f);
+            _playerStats.RestarVida(20);
+            _uiManager.RestarFillAmount(0.2f);
         }
     }
 }

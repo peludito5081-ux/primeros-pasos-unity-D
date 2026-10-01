@@ -782,6 +782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel-Fondo-menu
       objectReference: {fileID: 0}
+    - target: {fileID: 5298510590376236365, guid: b6657dc7c6ab45b4784650a946d01031, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6269088714941084846, guid: b6657dc7c6ab45b4784650a946d01031, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
