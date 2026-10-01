@@ -53,7 +53,8 @@ public class PlayerStats : MonoBehaviour
         if (_puntosVida <= 0)
         {
             Time.timeScale = 0;
-            
+            panelDerrota.SetActive(true);
+
         }
 
         
