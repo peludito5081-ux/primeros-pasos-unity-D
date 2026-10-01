@@ -7,6 +7,9 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private UIManager _uiManager;
     [SerializeField] private float _puntosVidaActuales = 100f;
     [SerializeField] private int _vidaMaxima;
+    [SerializeField] private int _panelGG;
+
+    public GameObject panelGG;
     // Start is called before the first frame update
     public void RestarVida(int daño)
     {
@@ -36,7 +39,8 @@ public class PlayerStats : MonoBehaviour
         }
         if (_puntosVidaActuales == 0)
         {
-            Destroy (this.gameObject);
+            Time.timeScale = 0; 
+            panelGG.SetActive(true);
         }
     }
 }

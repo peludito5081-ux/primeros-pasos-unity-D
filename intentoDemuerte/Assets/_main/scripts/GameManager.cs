@@ -3,10 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+    //start
+    //reanudar
+
     public void CargarEscena(int scene)
     {
         SceneManager.LoadScene(scene);
-
     }
 
     public void SalirDelJuego()
@@ -23,4 +26,9 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+    public void Start()
+    {
+        ReanudarJuego();
+    }
+
 }

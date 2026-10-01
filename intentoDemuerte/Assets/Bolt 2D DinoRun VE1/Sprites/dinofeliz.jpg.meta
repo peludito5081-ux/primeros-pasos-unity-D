@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8766e3ad1b10c634faeedfa8be1e25de
+guid: a0613c9e426b3ac46ad236bd8cfc5ccc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9139330975122868335
-    second: descarga_0
+      213: -6445976851604977287
+    second: dinofeliz_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: descarga_0
+      name: dinofeliz_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 690
-        height: 388
+        width: 770
+        height: 807
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f684ce0891d65de70800000000000000
-      internalID: 9139330975122868335
+      spriteID: 979c1b9a43a4b86a0800000000000000
+      internalID: -6445976851604977287
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      descarga_0: 9139330975122868335
+      dinofeliz_0: -6445976851604977287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
