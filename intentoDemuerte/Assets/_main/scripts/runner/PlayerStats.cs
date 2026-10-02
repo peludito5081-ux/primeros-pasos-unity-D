@@ -1,6 +1,5 @@
 
-using JetBrains.Annotations;
-using TMPro.EditorUtilities;
+
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
