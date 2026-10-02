@@ -28,5 +28,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void Start()
+    {
+        ReanudarJuego();
+    }
 
 }
